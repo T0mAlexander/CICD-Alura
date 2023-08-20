@@ -47,3 +47,17 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
     </tr>
   </table>
 </div>
+
+## ⚙️ Funcionalidades do projeto
+
+- Automação de testes com a pipeline do Github Actions
+- Inicialização de containers na pipeline CI
+- Ambientação de testes baseado em múltiplas versões
+- Proteção de variáveis e dados secretos
+
+## ✔️ Práticas e técnicas
+
+- Ambiente de testes definido como Ubuntu
+- Criação de rotinas de integração contínua (CI)
+- Separação das rotinas da pipeline
+- Pipeline executada apenas em caso de _push_ ou _merge_
