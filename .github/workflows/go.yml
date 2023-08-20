@@ -12,9 +12,9 @@ jobs:
     env:
       HOST: localhost
       PORT: 5432
-      USER: cicd
-      PASSWORD: 123
-      DB_NAME: db
+      USER: root
+      PASSWORD: root
+      DB_NAME: root
     strategy:
       matrix:
         go_versions: ['>=1.18', '1.17', '1.18']
