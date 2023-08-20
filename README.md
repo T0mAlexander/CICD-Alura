@@ -61,3 +61,4 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
 - Criação de rotinas de integração contínua (CI)
 - Separação das rotinas da pipeline
 - Pipeline executada apenas em caso de _push_ ou _merge_
+- Aplicação transformada em imagem Docker
