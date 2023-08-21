@@ -48,3 +48,8 @@ jobs:
 
     - name: Compilando a aplicação Go
       run: go build -v main.go
+
+  docker:
+    needs: build
+    uses: ./.github/workflows/docker.yml
+    secrets: inherit
