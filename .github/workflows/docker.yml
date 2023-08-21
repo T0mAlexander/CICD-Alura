@@ -1,0 +1,19 @@
+name: Docker
+
+on:
+  workflow_call:
+    
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Configuração inicial do Docker
+      uses: docker/setup-buildx-action@v2.9.1
+    - name: Docker Login
+      uses: docker/login-action@v2.2.0
+      with:
+        username: t0malexander
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
