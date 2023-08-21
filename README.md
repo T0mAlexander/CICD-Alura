@@ -62,3 +62,4 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
 - Separação das rotinas da pipeline
 - Pipeline executada apenas em caso de _push_ ou _merge_
 - Aplicação transformada em imagem Docker
+- Variáveis de ambiente no Dockerfile
