@@ -38,16 +38,19 @@ jobs:
 
   build:
     needs: testes
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: ['ubuntu-latest', 'ubuntu-20.04']
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
 
     - name: Compilando a aplicação Go
       run: go build -v main.go
+  
+    - name: Criando artefatos do repositório
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: Aplicação Go
+        path: main
 
   docker:
     needs: build
