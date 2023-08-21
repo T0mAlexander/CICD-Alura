@@ -54,6 +54,7 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
 - Inicialização de containers na pipeline CI
 - Ambientação de testes baseado em múltiplas versões
 - Proteção de variáveis e dados secretos
+- Criação de artefatos do repositório
 
 ## ✔️ Práticas e técnicas
 
