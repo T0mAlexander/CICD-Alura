@@ -55,6 +55,7 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
 - Ambientação de testes baseado em múltiplas versões
 - Proteção de variáveis e dados secretos
 - Criação de artefatos do repositório
+- Envio automatizado da imagem para o DockerHub
 
 ## ✔️ Práticas e técnicas
 
