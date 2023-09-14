@@ -61,3 +61,4 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
 - Ocultação de arquivos de teste do banco de dados
 - Proteção de dados sensíveis da máquina virtual
 - Criação de scripts SSH via Github Actions
+- Configuração de redirecionamento de logs e erros
