@@ -7,17 +7,17 @@ jobs:
 
   EC2:
     runs-on: ubuntu-latest
+
     steps:
-    
     - name: Baixando o artefato do repositório
-      uses: actions/download-artifact@v2.1.1
+      uses: actions/download-artifact@v3.0.0
       with:
         name: Aplicação Go
     - uses: actions/checkout@v3
 
     - name: Deploy no servidor
       uses: easingthemes/ssh-deploy@main
-      with:
+      env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
