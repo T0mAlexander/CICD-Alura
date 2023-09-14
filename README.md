@@ -13,9 +13,9 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
     </caption>
     <tr>
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=docker" width="65px"/>
+        <img src="https://skillicons.dev/icons?i=aws" width="65px"/>
         <sub>
-          <h3>Docker</h3>
+          <h3>AWS</h3>
         </sub>
       </td>
       <td align="center">
@@ -50,18 +50,14 @@ Projeto relacionado ao curso "Integração Contínua: testes automatizados e pip
 
 ## ⚙️ Funcionalidades do projeto
 
-- Automação de testes com a pipeline do Github Actions
+- Infraestrutura da aplicação e banco de dados na AWS
 - Inicialização de containers na pipeline CI
-- Ambientação de testes baseado em múltiplas versões
-- Proteção de variáveis e dados secretos
-- Criação de artefatos do repositório
-- Envio automatizado da imagem para o DockerHub
+- Rotina da aplicação com Github Actions
+- Entrega contínua para uma instância EC2 na AWS
 
 ## ✔️ Práticas e técnicas
 
-- Ambiente de testes definido como Ubuntu
-- Criação de rotinas de integração contínua (CI)
-- Separação das rotinas da pipeline
-- Pipeline executada apenas em caso de _push_ ou _merge_
-- Aplicação transformada em imagem Docker
-- Variáveis de ambiente no Dockerfile
+- Segurança de rede instância EC2
+- Ocultação de arquivos de teste do banco de dados
+- Proteção de dados sensíveis da máquina virtual
+- Criação de scripts SSH via Github Actions
