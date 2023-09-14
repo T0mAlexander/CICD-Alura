@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    branches: [ "gh-actions" ]
+    branches: [ "gh-actions", "gh-actions-aws" ]
   pull_request:
-    branches: [ "gh-actions" ]
+    branches: [ "gh-actions", "gh-actions-aws" ]
 
 jobs:
   testes:
