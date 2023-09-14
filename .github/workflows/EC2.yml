@@ -15,7 +15,7 @@ jobs:
         name: Aplicação Go
     - uses: actions/checkout@v3
 
-    - name: Deploy to Staging server
+    - name: Deploy no servidor
       uses: easingthemes/ssh-deploy@main
       with:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -24,8 +24,8 @@ jobs:
         TARGET: /home/${{ secrets.REMOTE_USER }}
         EXCLUDE: "/data"
 
-    - name: remote ssh command
-      uses: appleboy/ssh-action@v1.0.0
+    - name: Comandos remotos via SSH
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.REMOTE_USER }}
@@ -38,5 +38,6 @@ jobs:
           export DB_NAME=${{ secrets.DB_NAME }}
           export DB_PORT=${{ secrets.DB_PORT }}
           export PORT=8000
+          go build -v main.go
           chmod +x main
           nohup ./main > nohup.out 2> nohup.err < /dev/null &
