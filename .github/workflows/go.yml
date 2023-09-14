@@ -2,16 +2,16 @@ name: Go
 
 on:
   push:
-    branches: [ "gh-actions", "gh-actions-aws" ]
+    branches: [ "*" ]
   pull_request:
-    branches: [ "gh-actions", "gh-actions-aws" ]
+    branches: [ "*" ]
 
 jobs:
   testes:
     runs-on: ${{ matrix.os }}
     env:
       HOST: localhost
-      DB_PORT: 5432
+      DB_PORT: ${{ secrets.DB_PORT }}
       USER: root
       PASSWORD: root
       DB_NAME: root
